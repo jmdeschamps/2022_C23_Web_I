@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider JM</title>
+    <style>
+    #slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 200%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	11% {
+		left: -50%;
+	}
+	22% {
+		left: -100%;
+	}
+	33% {
+		left: -150%;
+	}
+	50% {
+		left: -200%;
+	}
+	66% {
+		left: -150%;
+	}
+	77% {
+		left: -100%;
+	}
+	88% {
+		left: -50%;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="slider">
+        <figure>
+            <img src="img/desk.png" width="5%">
+            <img src="img/desk2.png">
+            <img src="img/desk.png">
+            <img src="img/desk3.png">
+            <img src="img/desk.png">
+        </figure>
+    </div>
+
+
+</body>
+</html>
