@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Mon parcours</title>
 </head>
-<body>
 <h1>Page de jmd</h1>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="checkbox" id="b" name="b" value="50" /> +
+  <input type="number" id="a" name="a" value="5" /> =
+  <output name="result" for="a b">60</output>
+    <input type="submit">
+</form>
 
-<iframe src="/aaaTexte.txt" frameborder="0" scrolling="100" height="400" width="80%">ok</iframe>
-</body>
+
+<button onclick=window.prompt("Enter your name : ", "your name here");>Go Back</button><br>
+<input type="text" onblur="history.back()" value="window.history.length" />
+<iframe src="./aaaTexte.html" frameborder="0" scrolling="100" height="400" width="80%">ok</iframe>
 </html>
