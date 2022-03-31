@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boite Flex</title>
+
+<style>
+body{
+  font-size: 30px;
+  }
+
+#monflex1{
+  display: flex;
+  height: 20%;
+  flex-wrap: nowrap;
+  margin: 10px;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+
+}
+#monflex2{
+position:absolute;
+  display: flex;
+  height: 80%;
+  width:20%;
+  flex-direction:column;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  margin: 10px;
+  justify-content: space-around;
+  background-color: green;
+}
+
+.haut {
+  background-color: orange;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.cote {
+  background-color: red;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+
+</head>
+<body>
+        <div id="monflex1">
+          <div class="haut" id="img1">a</div>
+          <div class="haut" id="img2">b</div>
+          <div class="haut" id="img3">c</div>
+        </div>
+        <div id="monflex2">
+          <div class="cote" id="img4">d</div>
+          <div class="cote" id="img5">e</div>
+          <div class="cote" id="img6">f</div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.rotate {
+  animation: rotation 8s infinite linear ;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rotate2 {
+  animation: rotation2 4s infinite linear;
+}
+
+@keyframes rotation2 {
+  from {
+    transform: rotate(-0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+</style>
+<body>
+  <img class="rotate2" src="etoile.png" />
+
+  <img class="rotate" src="etoile.png" />
+</body>
+</html>
